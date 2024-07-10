@@ -11,7 +11,9 @@ const HorizontalScroll: React.FC<PropsWithChildren<Props>> = ({
   children,
 }) => {
   return (
-    <div className={classNames('horizontal-scroll', className)}>{children}</div>
+    <div className={classNames('horizontal-scroll', className)}>
+      <div className="container">{children}</div>
+    </div>
   )
 }
 
